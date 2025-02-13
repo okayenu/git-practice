@@ -134,6 +134,9 @@ export function renderOrderSummary()
           container.remove();
     
           console.log(cart);
+
+          renderPaymentSummary();
+
           
         })
       }
