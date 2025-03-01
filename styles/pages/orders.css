@@ -25,6 +25,17 @@
   row-gap: 50px;
 }
 
+.order-container {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.order-container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
+  transform: translateY(-2px);
+}
+
 .order-header {
   background-color: rgb(240, 242, 242);
   border: 1px solid rgb(213, 217, 217);
@@ -34,8 +45,8 @@
   justify-content: space-between;
 
   padding: 20px 25px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .order-header-left-section {
@@ -89,8 +100,8 @@
   padding: 40px 25px;
   border: 1px solid rgb(213, 217, 217);
   border-top: none;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 
   display: grid;
   grid-template-columns: 110px 1fr 220px;

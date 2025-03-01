@@ -1,0 +1,2 @@
+# Keep GitHub token out of version control
+.cursor/mcp.json
