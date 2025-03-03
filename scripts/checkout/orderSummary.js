@@ -136,6 +136,7 @@ export function renderOrderSummary()
           console.log(cart);
 
           renderPaymentSummary();
+          renderOrderSummary(); //maybe delete if it fucks up
 
           
         })

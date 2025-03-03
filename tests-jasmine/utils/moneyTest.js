@@ -1,4 +1,4 @@
-import { formatCurrency} from "../scripts/utils/money.js";
+import { formatCurrency} from "../../scripts/utils/money.js";
 
 
 describe('Test Suite: Format Currency', ()=>
@@ -21,3 +21,6 @@ describe('Test Suite: Format Currency', ()=>
         expect(formatCurrency(2000.4)).toEqual('20.00');
     })
 });
+
+
+

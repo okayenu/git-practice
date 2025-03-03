@@ -80,12 +80,13 @@ products.forEach((product)=>
         addToCart(productId);
         updateCartQuantity();
         console.log(cart);
-        
-        
+           
       })
-
       
     })
+
+
+    
 
 
     
