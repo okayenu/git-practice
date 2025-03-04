@@ -33,6 +33,7 @@ export function renderOrderSummary()
     
     
         cartHTMLSummary+=`<div class="cart-item-container
+          js-item-container
           js-item-container-${matchingItem.id}">
                 <div class="delivery-date">
                   Delivery date: ${deliveryString}
@@ -49,14 +50,16 @@ export function renderOrderSummary()
                     <div class="product-price">
                       $${formatCurrency(matchingItem.priceCents)}
                     </div>
-                    <div class="product-quantity">
+                    <div class="product-quantity
+                        js-product-quantity-${matchingItem.id}">
                       <span>
                         Quantity: <span class="quantity-label">${item.quantity}</span>
                       </span>
                       <span class="update-quantity-link link-primary">
                         Update
                       </span>
-                      <span data-product-id="${matchingItem.id}" class="delete-quantity-link link-primary js-delete-link">
+                      <span data-product-id="${matchingItem.id}" class="delete-quantity-link 
+                        link-primary js-delete-link js-delete-link-${matchingItem.id}">
                         Delete
                       </span>
                     </div>
@@ -119,7 +122,7 @@ export function renderOrderSummary()
       return html;
     }
     
-    document.querySelector('.js-page').innerHTML = cartHTMLSummary;
+    document.querySelector('.js-order-summary').innerHTML = cartHTMLSummary;
     
     document.querySelectorAll('.js-delete-link').forEach(
       (link)=>
@@ -136,7 +139,7 @@ export function renderOrderSummary()
           console.log(cart);
 
           renderPaymentSummary();
-          renderOrderSummary(); //maybe delete if it fucks up
+          //renderOrderSummary(); //maybe delete if it fucks up
 
           
         })
