@@ -1,4 +1,5 @@
 import { formatCurrency } from "../scripts/utils/money.js";
+import { addToCart } from "./cart.js";
 
 export function getProduct(productId)
 {
@@ -66,9 +67,35 @@ class Clothing extends Product
   }
 };
 
+//built-in classes practice
+const date = new Date();
+
+console.log(date);
+
+console.log(date.toLocaleTimeString());
+
+/*
+function logThis()
+{
+  console.log(this);
+}
+
+logThis.call('hello');
+ 
+ const obj2 =
+ {
+  method()
+  {
+    console.log(this);
+  }
+ }
+
+ obj2.method();*/
+ 
 
  
 
+ 
 
 export const products = [
   {
