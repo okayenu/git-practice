@@ -1,6 +1,6 @@
 class Cart
 {
-    cart;
+    cartItems;
     #localStorageKey;
 
     constructor(localStorageKey)
