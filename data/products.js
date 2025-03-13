@@ -94,7 +94,7 @@ logThis.call('hello');
 
  export let products = [];
  
- export function loadProducts(renderer)
+ export function loadProducts(fun)
  {
    const xhr = new XMLHttpRequest();
 
@@ -109,8 +109,8 @@ logThis.call('hello');
         }
         return new Product(productDetails);
       });
-    console.log('load products');
-    renderer();
+    //console.log('load products');
+    fun();
      
   
   });
