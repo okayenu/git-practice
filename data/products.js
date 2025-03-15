@@ -70,9 +70,9 @@ class Clothing extends Product
 //built-in classes practice
 const date = new Date();
 
-console.log(date);
+//console.log(date);
 
-console.log(date.toLocaleTimeString());
+//console.log(date.toLocaleTimeString());
 
 /*
 function logThis()
@@ -109,7 +109,8 @@ logThis.call('hello');
         }
         return new Product(productDetails);
       });
-    //console.log('load products');
+     console.log('load products');
+
     fun();
      
   
@@ -122,7 +123,9 @@ logThis.call('hello');
  
  }
 
- loadProducts();
+ //loadProducts();
+
+ 
 
  
 
