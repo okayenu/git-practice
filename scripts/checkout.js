@@ -20,14 +20,14 @@ async function loadPage()
             resolve();
         })
     });
-
-    renderOrderSummary(); 
-    renderPaymentSummary();
     } 
     catch(error)
     {
         console.log('unexpected error, please try again later');
     }
+
+    renderOrderSummary(); 
+    renderPaymentSummary();
 
 };
 
