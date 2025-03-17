@@ -146,6 +146,13 @@
   grid-template-columns: 24px 1fr;
   margin-bottom: 12px;
   cursor: pointer;
+  padding: 6px 4px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.delivery-option:hover {
+  background-color: rgb(246, 250, 250);
 }
 
 .delivery-option-input {
