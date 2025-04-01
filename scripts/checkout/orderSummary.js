@@ -1,4 +1,4 @@
-import {cart, removeFromCart, updateDeliveryOPtion} from '../../data/cart.js';
+import {cart, removeFromCart, updateDeliveryOption} from '../../data/cart.js';
 import {products, getProduct} from '../../data/products.js';
 import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
@@ -7,8 +7,16 @@ import { renderPaymentSummary } from './paymentSummary.js';
 
 
 
-export function renderOrderSummary()
-{
+export function renderOrderSummary() {
+  if (cart.length === 0) {
+    document.querySelector('.js-order-summary').innerHTML = `
+      <div class="empty-cart-message">
+        Your cart is empty. <a class="link-primary" href="amazon.html">Continue shopping</a>
+      </div>
+    `;
+    return;
+  }
+
   let cartHTMLSummary = '';
   cart.forEach((item)=>
     {
@@ -148,7 +156,7 @@ export function renderOrderSummary()
           const {productId, deliveryOptionId}= element.dataset;
           element.addEventListener('click',()=>
           {
-            updateDeliveryOPtion(productId,deliveryOptionId);
+            updateDeliveryOption(productId, deliveryOptionId);
             renderOrderSummary();
             renderPaymentSummary();
           })
