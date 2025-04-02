@@ -103,7 +103,7 @@
 .product-rating-container {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .product-rating-stars {
