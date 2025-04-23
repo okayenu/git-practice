@@ -53,6 +53,18 @@
 
 .current-status {
   color: rgb(6, 125, 98);
+  font-weight: 700;
+}
+
+.current-status::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(6, 125, 98);
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
 }
 
 @media (max-width: 575px) {
