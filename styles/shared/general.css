@@ -30,7 +30,7 @@ input, select, button {
   border: 1px solid rgb(252, 210, 0);
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(213, 217, 217, 0.5);
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
 }
 
 .button-primary:hover {
