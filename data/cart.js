@@ -68,8 +68,11 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
 }
 
 
-export function loadCart(fun)
-{
+export function clearCart() {
+  cart = [];
+  saveToStorage();
+}
+
   const xhr = new XMLHttpRequest();
 
   xhr.addEventListener('load',()=>
